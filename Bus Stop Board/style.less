@@ -1,0 +1,135 @@
+.text(@size:14px,@color:black,@weight:normal){
+    font-size: @size;
+    color:@color;
+    font-weight:@weight;
+}
+.busContainer{
+  width: 600px;
+  border: 30px #000 solid;
+  padding: 0px;
+}
+.boxbor{
+      font-family: "微软雅黑";
+      height: 300px;
+      border-bottom: 10px #000 solid;
+      padding: 0px; 
+    } 
+.stopName{
+    .boxbor;
+    .cnName{
+        text-align: center;
+        margin: 15px;
+        .text(100px,red);
+    }
+    .enName{
+        .cnName;
+        font-size: 50px;
+    }
+}
+.busRoute{
+    .boxbor;
+    .firstRow{
+        .busName{
+            text-align: center;
+            .busNum{
+                .text(60px,bolder);
+            }
+            .noNum{
+                .text(10px,bolder);
+            }
+        }
+        .nextStop{
+            .text(25px,blue,bolder);
+            margin-top:10px;
+            line-height: 42px;
+        }
+        .nextStopName span{
+                    .text(35px,red,bolder);
+                    line-height: 89px;
+                    margin: 10px;
+                    letter-spacing: 15px;
+                    padding: 2px 13px 13px 20px;
+                    vertical-align: middle;
+                    border-top: 2px solid blue;
+                    border-bottom: 2px solid blue;
+                    position: relative;
+                    left: 31px;      
+        }
+    }
+}
+.secondRow{
+    margin-top:5px;
+    height: 85px;
+    margin-left:5px;
+    margin-right:5px;
+    div{
+        text-align: center;
+        vertical-align: baseline;
+    }
+}
+.warning{
+    margin-top:5px ;
+    color:red;
+    text-align: center;
+    font-weight:bolder;
+    letter-spacing: 1px;
+}
+.busRed{
+    text-align: center;
+}
+.redLine{
+    width:200px;
+    border: 1px solid red;
+    display: inline-block;
+    position: relative;
+    top:-6px;
+}
+.bus{
+    color: red;
+    font-weight:bolder;
+}
+.triangle{
+    border-bottom: 10px solid red;
+    border-right: 10px solid transparent;
+    display: inline-block;
+    width:0;
+    height: 0;
+    transform: scaleX(2);
+    position: relative;
+    top: -6px;
+}
+.blueStrip{
+    height: 40px;
+    background: blue;
+    margin-top:5px ;
+    color:white;
+    font-weight:bolder;
+    .goWhere{
+           .text(32px,white);
+           display: inline-block;
+           width: 381px;
+           text-align: center;
+           letter-spacing: 40px;
+           position: relative;
+           top:-5px;
+           
+    }
+    .start{
+        width: 15px;
+        display: inline-block;
+        font-size: 10px;
+        line-height: 12px;
+        margin-top: 3px;
+    }
+    .firLast{
+        display: inline-block;
+        
+        div{
+            display: inline-block;
+        }
+    }
+    .time{
+        .firLast;
+        float:right;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>公交站牌</title>
+	<link href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap-grid.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.less">
+</head>
+<body>
+	<div class="busContainer container">
+		<div class="stopName">
+			<div class="cnName">北 &nbsp;&nbsp;岭</div>
+			<div class="enName">BEI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LING</div>
+		</div>
+		<div class="busRoute">
+			<div class="row firstRow">
+			  	<div class="col-md-5 busName">
+			  		<div class="busNum">30</div>
+					<div class="noNum">无人售票车</div>
+			  	</div>
+			  	<div class="col-md-1 nextStop">下站</div>
+			  	<div class="col-md-6 nextStopName "><span>瑞昌路</span></div>
+			</div>
+			
+			<div class="row secondRow">
+				 <div class="col-md-1 sn">胜利桥</div>
+				 <div class="col-md-1 sn">海晶化工</div>
+				 <div class="col-md-1 sn">中心医院</div>
+				 <div class="col-md-1 sn">水清沟</div>
+				 <div class="col-md-1 sn">北岭</div>
+				 <div class="col-md-1 sn">瑞昌路</div>
+				 <div class="col-md-1 sn">嘉定路</div>
+				 <div class="col-md-1 sn">小村庄</div>
+				 <div class="col-md-1 sn">抚顺路</div>
+				 <div class="col-md-1 sn">海泊桥</div>
+				 <div class="col-md-1 sn">威海路</div>
+				 <div class="col-md-1 sn">台东</div>
+			</div>
+			<div class="warning">
+				无人售票&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上车投币&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自备零钱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不设找兑
+			</div>
+			<div class="busRed">
+				<span class="redLine"></span>
+				<span class="bus">BUS</span>
+				<span class="redLine"></span>
+				<span class="triangle"></span>
+			</div>
+			<div class="blueStrip">
+				<span class="goWhere">开往台东</span>
+				<span class="start">始发站</span>
+				<span class="firLast">
+					<div>首班车</div><br />
+					<div>末班车</div>
+				</span>
+				<span class="time">
+					<div>5:40</div><br />
+					<div>21:30</div>
+				</span>
+			</div>
+		</div>	
+		<div class="busRoute">
+			<div class="row firstRow">
+			  	<div class="col-md-5 busName">
+			  		<div class="busNum">30</div>
+					<div class="noNum">无人售票车</div>
+			  	</div>
+			  	<div class="col-md-1 nextStop">下站</div>
+			  	<div class="col-md-6 nextStopName "><span>瑞昌路</span></div>
+			</div>
+			
+			<div class="row secondRow">
+				 <div class="col-md-1 sn">胜利桥</div>
+				 <div class="col-md-1 sn">海晶化工</div>
+				 <div class="col-md-1 sn">中心医院</div>
+				 <div class="col-md-1 sn">水清沟</div>
+				 <div class="col-md-1 sn">北岭</div>
+				 <div class="col-md-1 sn">瑞昌路</div>
+				 <div class="col-md-1 sn">嘉定路</div>
+				 <div class="col-md-1 sn">小村庄</div>
+				 <div class="col-md-1 sn">抚顺路</div>
+				 <div class="col-md-1 sn">海泊桥</div>
+				 <div class="col-md-1 sn">威海路</div>
+				 <div class="col-md-1 sn">台东</div>
+			</div>
+			<div class="warning">
+				无人售票&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上车投币&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自备零钱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不设找兑
+			</div>
+			<div class="busRed">
+				<span class="redLine"></span>
+				<span class="bus">BUS</span>
+				<span class="redLine"></span>
+				<span class="triangle"></span>
+			</div>
+			<div class="blueStrip">
+				<span class="goWhere">开往台东</span>
+				<span class="start">始发站</span>
+				<span class="firLast">
+					<div>首班车</div><br />
+					<div>末班车</div>
+				</span>
+				<span class="time">
+					<div>5:40</div><br />
+					<div>21:30</div>
+				</span>
+			</div>
+		</div>	
+		
+	</div>
+<script>
+	var num= document.getElementsByClassName("sn");
+	for(var i=0;i<num.length;i++){
+		var n=num[i].innerHTML.length;
+		num[i].style.lineHeight=5.5/n;
+	}
+	
+	
+</script>
+</body>
+</html>
